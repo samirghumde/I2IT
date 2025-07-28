@@ -1,0 +1,429 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f1f1f1;
+  }
+  
+  .container {
+    display: flex;
+    min-height: 80vh;
+  }
+  
+  .left-section {
+    width: 35%;
+    background-color: #333;
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .left-section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .left-section p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+  }
+  
+  .right-section {
+    width: 65%;
+    background: white;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+
+  .description {
+    margin-bottom: 30px;
+  }
+  
+  .description h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .description p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  .contact-header {
+    width: 80%;
+    margin: 40px auto 20px;
+    text-align: center;
+  }
+  
+  .contact-header h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contact-header p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  /* Header layout */
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    position: relative;
+  }
+  
+  .logo {
+    position: absolute;
+    left: 120px;  /* Updated from 75px to 120px */
+    top: 20px;
+    height: 140px;
+  }
+
+  /* Welcome title */
+  .site-title {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .site-title h1 {
+    font-size: 28px;
+    color: rgb(4, 7, 7);
+    margin: 10px 0;
+  }
+
+  /* Navigation menu */
+  nav {
+    text-align: center;
+    margin-top: 25px;
+  }
+  
+  nav a {
+    margin: 0 25px;
+    text-decoration: none;
+    color: rgb(15, 15, 242);
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  .social-links {
+    
+    margin-top: 00px;
+  }
+  
+  .social-links a {
+    margin: 0 10px;
+    color: #0c9bb1; /* or choose a brand color */
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #121617; /* hover color (light blue) */
+  }
+
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #cbc3c3;
+   
+    border-top: 1px solid #ccc;
+  }
+  
+  footer .social a {
+    margin: 0 20px;
+    display: inline-block;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: 
+    color: #fff;
+  }
+  
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    position: relative;
+  }
+  
+  .logo {
+    position: absolute;
+    left: 120px;
+    top: 20px;
+    height: 140px;
+  }
+  
+  .site-title h1 {
+    
+    color: rgb(19, 33, 33);
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  nav {
+    
+    text-align: center;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #aaf;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 18px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  
+  .donation-text {
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .payment-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  .qr-code {
+    width: 200px;
+    height: 200px;
+    margin: 20px 0;
+  }
+  
+  .upi-id {
+    font-size: 18px;
+    color: #090909;
+    font-weight: bold;
+  }
+
+  .form-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #donor-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #donor-form input {
+    padding: 10px;
+    width: 280px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  #donor-form button {
+    padding: 10px 20px;
+    background-color: #00c853;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  #donor-form button:hover {
+    background-color: #009624;
+  }
+
+
+  #confirm-payment {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e4b977;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  #confirm-payment:hover {
+    background-color: #0a0a0a;
+  }
+  
+  .confirmation {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    color: #c8f7c5;
+  }
+
+  /* Make body take full height */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Content expands to fill space */
+  .main-content {
+    flex: 1;
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  /* Make the body a flex container */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Push footer to the bottom */
+  .main-content {
+    flex: 1;
+  }
+  
+  /* Style your footer */
+  footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer .social-links {
+    margin-bottom: 10px;
+  }
+  
+  footer .social-links a {
+    margin: 0 10px;
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  footer .social-links a:hover {
+    color: #fff;
+  }
+
+  /* Make body and html take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Flexbox layout to push footer down */
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #bcccd2;
+    color: rgb(22, 19, 19);
+    text-align: center;
+    padding:20px 10px;
+  }
+  
+  footer .social-links a {
+    margin: 0 10px;
+    color: rgb(3, 3, 3);
+  }

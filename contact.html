@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-top">
+      <img src="https://assets.collegedunia.com/public/college_data/images/logos/1631004056Logoi2it1.png" alt="Logo" class="logo" />
+      <div class="site-title">
+        <h1>International Institute of Information Technology (I²IT)</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown('aboutDropdown')">About Us</button>
+            <div class="dropdown-content" id="aboutDropdown">
+              <a href="about-i2it.html">About I²IT</a>
+              <a href="about-alumni.html">About Alumni Portal</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown('supportDropdown')">Support</button>
+            <div class="dropdown-content" id="supportDropdown">
+              <a href="job-portal.html">Job Portal</a>
+              <a href="mentorship.html">Mentorship</a>
+              <a href="support.html">Donation</a>
+            </div>
+          </div>
+          
+         
+          <a href="contact.html">Contact Us</a>
+          <a href="login.html">Login</a>
+        </nav>
+      </div>
+    </div>
+    </div>
+
+  <div class="contact-header">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Whether you have a question, some feedback, or just want to say hello — feel free to reach out. Got ideas, suggestions, or something on your mind? Don’t hesitate! Just click the contact form and let us know how we can help. You can also tailor the form to suit your needs!</p>
+  </div>
+
+  <div class="container">
+    <div class="left-section">
+      <h2>Get in Touch</h2>
+      <p>P14, Rajiv Gandhi Infotech Park<br>Hinjawadi, Pune, 411057</p>
+      <p>+91 20 22933 441/2/3<br>info@isquareit.edu.in</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/I2ITPune/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/isquareit" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://in.linkedin.com/school/i2it-pune/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+    </div>
+
+    <div class="right-section">
+      <form>
+        <div class="row">
+          <input type="text" placeholder="First Name" required>
+          <input type="text" placeholder="Last Name">
+        </div>
+        <input type="email" placeholder="Email *" required>
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+</body>
+<script>
+  function toggleDropdown(id) {
+    document.querySelectorAll('.dropdown-content').forEach(drop => {
+      if (drop.id !== id) drop.style.display = 'none';
+    });
+    const dropdown = document.getElementById(id);
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      document.querySelectorAll('.dropdown-content').forEach(drop => {
+        drop.style.display = 'none';
+      });
+    }
+  };
+</script>
+</html>

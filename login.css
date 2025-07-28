@@ -1,0 +1,245 @@
+/* Background video setup */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+  
+  #video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Darker video effect */
+    z-index: -1;
+  }
+  
+  /* Overall page */
+  body {
+    margin: 0;
+    padding: 0;
+    background: none;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header layout */
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    position: relative;
+  }
+  
+  .logo {
+    position: absolute;
+    left: 120px;  /* Updated from 75px to 120px */
+    top: 20px;
+    height: 160px;
+  }
+  
+  /* Welcome title */
+  .site-title {
+    text-align: right;
+    width: 100%;
+  }
+  
+  .site-title h1 {
+    font-size: 45px;
+    font-weight: 800;
+    color: rgb(69, 141, 242);
+    width: 994px;
+    margin-top: 50px;
+    letter-spacing: 2px;
+  }
+  
+  /* Navigation menu */
+  nav {
+    text-align: center;
+    margin-top: 23px;
+  }
+  
+  nav a {
+    margin: 0 30px;
+    text-decoration: none;
+    color: #aaaaff;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main login area */
+  .main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+  
+  /* Login box */
+  .login-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    width: 300px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .login-container h2 {
+    margin-bottom: 20px;
+    color: #343637;
+  }
+  
+  .login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-container button:hover {
+    background-color: #357ab7;
+  }
+  
+  .login-container a {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #ffc107;
+  }
+  body {
+    
+    font-family: 'Arial', sans-serif;
+    color: white;
+  }
+  .site-title h1 {
+    text-align: center;
+    font-size: px;
+    color: white;
+    margin: 0 auto;
+  }
+
+  /* Header overall styling */
+.header {
+   /* Clean deep blue color */
+  color: white;
+  box-shadow: none !important;
+  border-bottom: none !important;
+  padding: 10px 0;
+}
+
+/* Header top layout */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Logo settings */
+.logo {
+  height: 160px;
+  margin-left: 20px;
+}
+
+/* Title container */
+.site-title {
+  flex-grow: 1;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* The actual heading text */
+.site-title h1 {
+  font-size: 45px;
+  font-weight: 800;
+
+  color: white;
+  margin: 0 auto;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+}
+/* Header styling */
+.header {
+  
+  color: white;
+  padding: 10px 0;
+  box-shadow: none;
+  border-bottom: none;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: transparent;
+}
+
+.logo {
+  height: 80px;
+  margin-left: 20px;
+}
+
+.site-title {
+  flex-grow: 1;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.site-title h1 {
+  font-size: 45px;
+  color: white;
+  
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 800;
+}
+
+nav {
+  transform: scale(1.15)
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  transform: scale(1.15);
+}
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Alumni Association</title>
+  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <video autoplay muted loop id="background-video">
+    <source src="large1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <!-- Dark Overlay -->
+<div id="video-overlay"></div>
+</body>
+
+<div class="header">
+  <div class="header-top">
+    <img src="https://assets.collegedunia.com/public/college_data/images/logos/1631004056Logoi2it1.png" alt="Logo" class="logo" />
+    <div class="site-title">
+      <h1>International Institute of Information Technology (I²IT)</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="toggleDropdown('aboutDropdown')">About Us</button>
+          <div class="dropdown-content" id="aboutDropdown">
+            <a href="about-i2it.html">About I²IT</a>
+            <a href="about-alumni.html">About Alumni Portal</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="toggleDropdown('supportDropdown')">Support</button>
+          <div class="dropdown-content" id="supportDropdown">
+            <a href="job-portal.html">Job Portal</a>
+            <a href="mentorship.html">Mentorship</a>
+            <a href="support.html">Donation</a>
+          </div>
+        </div>
+        
+       
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </div>
+  </div>
+  </div>
+
+  <div class="main">
+    <div class="login-container">
+      <h2>Alumni Login</h2>
+      <form action="/login" method="POST">
+        <input type="text" name="username" placeholder="Username" required />
+        <input type="password" name="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+        <a href="forgot-password.html">Forgot Password?</a> <!-- Link to the Forgot Password page -->
+      </form>
+    </div>
+  </div>
+  <script>
+    function toggleDropdown(id) {
+      document.querySelectorAll('.dropdown-content').forEach(drop => {
+        if (drop.id !== id) drop.style.display = 'none';
+      });
+      const dropdown = document.getElementById(id);
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    }
+  
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        document.querySelectorAll('.dropdown-content').forEach(drop => {
+          drop.style.display = 'none';
+        });
+      }
+    };
+  </script>
+  <script>
+    document.querySelector('form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      this.reset();
+  
+      // Optional: Show a message
+      alert('Form submitted and reset!');
+    });
+  </script>
+  
+</body>
+</html>

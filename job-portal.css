@@ -1,0 +1,375 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7fa;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #736f6f;
+    color: #c8ffff;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-container img {
+    height: 160px;
+    margin-left: 75px;
+    margin-top: 10px;
+  }
+  
+  .header-title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    margin-top: 1px;
+    margin-left: 25px;
+  }
+  
+  /* Navbar */
+  nav {
+    background-color: #515050;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  nav a {
+    color: #c8c8ff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 22px;
+  }
+  
+  nav a:hover {
+    color: #ffffff;
+  }
+  
+  /* Form Container */
+  .container {
+    max-width: 600px;
+    margin: 3rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container h1 {
+    margin-bottom: 1.5rem;
+    color: #0073e6;
+    text-align: center;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  label {
+    font-weight: bold;
+    font-size: 0.95rem;
+  }
+  
+  input, select, textarea, button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  button {
+    background: #0073e6;
+    color: #fff;
+    border: none;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #005bb5;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    margin-top: 3rem;
+  }
+  
+  .social-links {
+    margin-top: 10px;
+  }
+  
+  .social-links a {
+    margin: 0 20px;
+    color: #090101;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #00aced;
+  }
+   /* Navbar container */
+.navbar {
+    
+    padding: 15px 0;
+    
+    text-align: center;
+  }
+  
+  /* Nav links styling */
+  .nav-links {
+    display: inline-flex;
+    gap: 50px; /* Space between links */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual link style */
+  .nav-links a {
+    color: rgb(6, 65, 97);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffcc00; /* Hover effect */
+  }
+  /* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: center;
+  
+  
+  padding: 00px 0;
+  flex-wrap: wrap;
+}
+
+.navbar a,
+.dropbtn {
+ 
+  text-decoration: none;
+  padding: 10px 18px;
+  font-weight: bold;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.navbar a:hover,
+.dropbtn:hover {
+  color: #fff;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  min-width: 180px;
+
+  z-index: 1;
+  margin-top: 8px;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  
+  color: white;
+}
+
+/* Show dropdown */
+.show {
+  display: block;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: center;
+
+  padding: 1rem;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.navbar a, .navbar .dropbtn {
+  font-size: 20px;
+  padding: 12px 20px;
+  
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.navbar a:hover, .navbar .dropbtn:hover {
+  
+  transform: scale(1.15);
+}
+
+/* Dropdown menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  min-width: 180px;
+  border-radius: 15px;
+  z-index: 1;
+  
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+ 
+}
+
+.dropdown-content a:hover {
+ 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+
+}
+
+
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+  background-color: #090101;
+  padding: 10px 0;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Bubble style for links */
+.dropdown-content a {
+  color: #efeaea;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  border-radius: 30px;
+  margin: 5px;
+}
+
+.dropdown-content a:hover {
+    color: #898383;
+}
+
+/* Show class toggled via JS */
+.show {
+  display: block;
+}
+
+/* Common styling for nav items (links and buttons) */
+.navlink,
+.dropbtn {
+    color: #c8c8ff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/* Hover effect */
+.navlink:hover,
+.dropbtn:hover {
+
+}
+
+/* Align dropdown container vertically in navbar */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Navbar layout */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+

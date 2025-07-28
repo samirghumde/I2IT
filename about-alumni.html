@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Alumni Portal</title>
+  <link rel="stylesheet" href="about-alumni.css" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="header">
+    <div class="header-top">
+      <img src="https://assets.collegedunia.com/public/college_data/images/logos/1631004056Logoi2it1.png" alt="Logo" class="logo" />
+      <div class="site-title">
+        <h1>International Institute of Information Technology (I²IT)</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown('aboutDropdown')">About Us</button>
+            <div class="dropdown-content" id="aboutDropdown">
+              <a href="about-i2it.html">About I²IT</a>
+              <a href="about-alumni.html">About Alumni Portal</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown('supportDropdown')">Support</button>
+            <div class="dropdown-content" id="supportDropdown">
+              <a href="job-portal.html">Job Portal</a>
+              <a href="mentorship.html">Mentorship</a>
+              <a href="support.html">Donation</a>
+            </div>
+          </div>
+          
+         
+          <a href="contact.html">Contact Us</a>
+          <a href="login.html">Login</a>
+        </nav>
+      </div>
+    </div>
+    </div>
+
+      <section class="about-section" id="about">
+        <h1>About Alumni Portal</h1>
+        <p>
+            Whether you've just graduated this year or you've been part of IT for years, this is the place to connect to all things and all I2IT family members. Socialize, network, share news, and get involved with fellow alumni, students, faculty, staff, and friends. Get access to the people, events, ideas, and resources that matter to you, and help strengthen the Institution.
+            You became a part of this association the day you joined this campus and became part of the I2IT family. We are here to help you keep that bond strong. You can find friends old and new and be part of events on campus, conduct sessions, connect and communicate with ex-I2ITians or just offer your support to your alma mater.
+            Whatever you choose, we are here to help you be in touch!
+        </p>
+      </section>
+
+  <section class="alumni-section">
+    <h2>Meet Our Alumni's</h2>
+    <div class="alumni-container">
+      <div class="alumni-card">
+        <img src="https://www.isquareit.edu.in/wp-content/uploads/2021/07/Isha-Chopde-1-300x300.jpeg" alt="Don Francis" />
+        <h3>Isha Chopde (2015-16) (California State University,Fullerton)</h3>
+      </div>
+      <div class="alumni-card">
+        <img src="https://www.isquareit.edu.in/wp-content/uploads/2023/04/Pranav-Gajarmal.png" alt="Ashley Jones" />
+        <h3>Pranav Gajarmal                     (2020-21) (The University of Manchester)</h3>
+      </div>
+      <div class="alumni-card">
+        <img src="https://www.isquareit.edu.in/wp-content/uploads/2021/07/Fenil-Mehta-1-scaled-e1627536574841-500x500.jpg" alt="Ashley Jones" />
+        <h3>Fenil Mehta (2019-20) (IIT,Mumbai)</h3>
+      </div>
+      <div class="alumni-card">
+        <img src="https://www.isquareit.edu.in/wp-content/uploads/2021/07/Pearl-Swaminathan-e1627536486687-500x500.jpeg" alt="Ashley Jones" />
+        <h3>Pearl Swaminathan (2019-20) (Symbiosis Institute of Geoinformatics)</h3>
+      </div>
+      <!-- Add more alumni cards here as needed -->
+    </div>
+  </section>
+  <div class="vision-mission-section">
+    <div class="vm-box">
+      <h3>Our Vision</h3>
+      <p>
+        To build a strong alumni network that fosters lifelong relationships,
+        encourages collaboration, and contributes to the development of our institute and society.
+      </p>
+    </div>
+    <div class="vm-box">
+      <h3>Our Mission</h3>
+      <p>
+        To engage alumni through meaningful events, mentoring, and support programs,
+        enhancing their connection to the institute and current students.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="social-links">
+        <a href="https://www.facebook.com/I2ITPune/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/isquareit" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://in.linkedin.com/school/i2it-pune/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+    </div>
+    <p>  
+        A Project of Hope Foundation - FINOLEX Copyright © 2021 | isquareit.edu.in | Powered By Onlinebusiness.org</p>
+  </footer>
+</body>
+<script>
+  function toggleDropdown(id) {
+    document.querySelectorAll('.dropdown-content').forEach(drop => {
+      if (drop.id !== id) drop.style.display = 'none';
+    });
+    const dropdown = document.getElementById(id);
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      document.querySelectorAll('.dropdown-content').forEach(drop => {
+        drop.style.display = 'none';
+      });
+    }
+  };
+</script>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ALUMNI ASSOCIATION -  I²IT</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+<!-- Background Video -->
+<video autoplay muted loop id="background-video">
+  <source src="large1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<!-- Dark Overlay -->
+<div id="video-overlay"></div>
+</body>
+
+<header>
+  <div class="logo">
+    <img src="https://assets.collegedunia.com/public/college_data/images/logos/1631004056Logoi2it1.png" alt="I2IT Logo">
+  </div>
+  <div class="header-wrapper">
+    <h1 class="site-welcome">International Institute of Information Technology (I²IT)</h1>
+    
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown()">About Us</button>
+        <div class="dropdown-content" id="aboutDropdown">
+          <a href="about-i2it.html">About  I²IT</a>
+          
+          <a href="about-alumni.html">About Alumni Portal</a>
+        </div>
+      </div>
+    
+      <div class="dropdown">
+        <button class="dropbtn" onclick="toggleSupportDropdown()">Support</button>
+        <div class="dropdown-content bubble" id="supportDropdown">
+            <a href="job-portal.html">Job Portal</a>
+            <a href="mentorship.html">Mentorship</a>
+            <a href="support.html">Donation</a>
+        </div>
+      </div>
+    
+    <script>
+        function toggleSupportDropdown() {
+            const dropdown = document.getElementById("supportDropdown");
+            dropdown.classList.toggle("show");
+        }
+    
+        // Optional: Close dropdown when clicking outside
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                const dropdowns = document.getElementsByClassName("dropdown-content");
+                for (let i = 0; i < dropdowns.length; i++) {
+                    const openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+      <a href="contact.html">Contact Us</a>
+     
+      <a href="login.html">Login</a>
+    </div>
+  </div>
+</header>
+<script>
+  function toggleDropdown() {
+    document.getElementById("aboutDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if clicked outside
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      for (let i = 0; i < dropdowns.length; i++) {
+        let openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+
+
+  <section class="hero">
+    <h1>ALUMNI ASSOCIATION PORTAL</h1>
+    <h2></h2>
+  </section>
+
+<!-- Gallery Section with Swiper Slider -->
+<div class="section">
+  <h3 style="text-align: center;">Gallery</h3>
+  <div class="swiper mySwiper" style="width: 100%; max-width: 1200px; margin: auto;">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide" style="text-align: center;">
+        <img src="https://www.isquareit.edu.in/wp-content/uploads/2019/03/GC_2018_14-1024x683.jpg" alt="Convocation Ceremony" style="width: 50%; max-width: 50%; height: auto; border-radius: 12px;">
+        <p>Convocation Ceremony</p>
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide" style="text-align: center;">
+        <img src="https://www.isquareit.edu.in/wp-content/uploads/2020/02/DSC_0021-1024x683.jpg" alt="Gallery 2" style="width: 50%; max-width: 50%; height: auto; border-radius: 12px;">
+        <p>Campus Life</p>
+      </div>
+      <!-- Slide 3 -->
+      <div class="swiper-slide" style="text-align: center;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTxe-sOMc2L-S1LXMzZebwmPTUd5QUpoJ5dHUQq5Fe56d28cdN7PQ7GSLGIC7VSAkbiwc&usqp=CAU" alt="Gallery 3" style="width: 50%; max-width: 50%; height: auto; border-radius: 12px;">
+        <p>Tech Fest</p>
+      </div>
+      <!-- Slide 4 -->
+      <div class="swiper-slide" style="text-align: center;">
+        <img src="https://hfrcpune.org/wp-content/uploads/2023/03/I2IT-Lecture-23Feb2023.jpg" alt="Gallery 4" style="width: 50%; max-width: 50%; height: auto; border-radius: 12px;">
+        <p>Guest Lectures</p>
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Pagination Dots -->
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+  <!-- EVENTS SECTION -->
+<section class="events">
+  <h2>EVENTS</h2>
+  <div class="event-grid">
+    <div class="event-card">
+      <img src="https://www.isquareit.edu.in/wp-content/uploads/2018/06/alumni_img1.jpg" alt="Event 1">
+      <h3>Alumni Meet 2025</h3>
+      <p>A heartwarming reunion of past graduates celebrating achievements and building future collaborations.</p>
+    </div>
+    <div class="event-card">
+      <img src="https://media.licdn.com/dms/image/v2/D5612AQEI0gJ82yCRVg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1736447547259?e=2147483647&v=beta&t=50z9HPBFb2Q5PqRomjWLEgFEgF7NvaGJP0PDfhc2yuM" alt="Event 2">
+      <h3>Tech Talk Series</h3>
+      <p>Industry leaders from our alumni network shared insights on the future of AI and technology.</p>
+    </div>
+    <div class="event-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQasy7EjcpFkYeM8i9XOlz9dFCT8aHRMLde4WNTKylCh_HeUz6wzXOB3nuB5sfypPDfR9U&usqp=CAU" alt="Event 3">
+      <h3>Annual Sports Meet</h3>
+      <p>Bringing back the thrill of the field—alumni vs students in a friendly sporting event.</p>
+    </div>
+    <div class="event-card">
+      <img src="https://www.isquareit.edu.in/wp-content/uploads/2019/03/Dhruva_2019_15.jpg" alt="Event 4">
+      <h3>Cultural Event</h3>
+      <p>Join us for the vibrant celebration of our Annual College Fest – where talent meets tradition!</p>
+    </div>
+    <div class="event-card">
+      <img src="https://images.shiksha.com/mediadata/images/1555500700phphhyFZn.jpeg" alt="Event 5">
+      <h3>Placement Drive</h3>
+      <p>Kickstart your career at our College Placement Drive – where opportunities meet ambition!</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <section class="main">
+    <div class="image-box">
+      <!-- Image box is hidden via CSS -->
+    </div>
+    <div class="text-box">
+      <p>
+        The  I²IT Alumni Association is a student-led initiative dedicated to building lasting connections between our alumni and the institute. Developed and maintained by the passionate students of the International Institute of Information Technology, this platform aims to foster a thriving community of graduates, mentors, and innovators. <br><br>
+        Our mission is to celebrate the achievements of our alumni, encourage collaboration, and provide opportunities for networking, mentorship, and growth. Whether you're a recent graduate or a seasoned professional, this space is your bridge back to the IIIT family. <br><br>
+        We believe in the power of shared experiences and collective progress—and we're committed to keeping the spirit of IIIT alive across generations.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://www.facebook.com/I2ITPune/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="https://twitter.com/isquareit" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://in.linkedin.com/school/i2it-pune/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+    <p>A Project of Hope Foundation - FINOLEX Copyright © 2021 | isquareit.edu.in Powered By Onlinebusiness.org</p>
+  </footer>
+</body>
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  });
+</script>
+</html>

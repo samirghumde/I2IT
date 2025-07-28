@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support Us</title>
+  <link rel="stylesheet" href="support.css" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="page-container"> <!-- Flex container starts -->
+
+    <div class="header">
+      <div class="header-top">
+        <img src="https://assets.collegedunia.com/public/college_data/images/logos/1631004056Logoi2it1.png" alt="Logo" class="logo" />
+        <div class="site-title">
+          <h1>International Institute of Information Technology (I²IT)</h1>
+          <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="toggleDropdown('aboutDropdown')">About Us</button>
+              <div class="dropdown-content" id="aboutDropdown">
+                <a href="about-i2it.html">About I²IT</a>
+                <a href="about-alumni.html">About Alumni Portal</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="toggleDropdown('supportDropdown')">Support</button>
+              <div class="dropdown-content" id="supportDropdown">
+                <a href="job-portal.html">Job Portal</a>
+                <a href="mentorship.html">Mentorship</a>
+                <a href="support.html">Donation</a>
+              </div>
+            </div>
+            
+           
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html">Login</a>
+          </nav>
+        </div>
+      </div>
+      </div>
+
+    <div class="contact-header">
+      <h1>Your Support Matters! </h1>
+      <p>Your support plays a vital role in helping us maintain a vibrant and engaged alumni community.
+          Whether it’s organizing reunions, supporting student mentorship, or building new initiatives, your contribution fuels our mission.
+          Together, we can make lasting connections and create impactful experiences for generations to come.</p>
+    </div>
+
+    <div class="container">
+      <div class="left-section">
+        <h2>Donate Now</h2>
+        <p>Your generous support drives our success and impact. Thank you for being a vital part of our mission.</p>
+        <p>P14, Rajiv Gandhi Infotech Park<br>Hinjawadi, Pune, 411057</p>
+        <p>+91 20 22933 441/2/3<br>info@isquareit.edu.in</p>
+      </div>
+
+      <main class="main-content">
+        <section class="donation-text">
+          <p>Help us organize alumni events, provide student mentorship, and stay connected as a community.</p>
+        </section>
+
+        <section class="form-section">
+          <form id="donor-form">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <button type="submit">Proceed to Donate</button>
+          </form>
+        </section>
+
+        <section class="payment-box" id="payment-box" style="display: none;">
+          <h3>Scan to Donate via UPI</h3>
+          <img src="qr.jpeg" alt="UPI QR Code" class="qr-code" />
+          <p>Or send directly to UPI ID:</p>
+          <div class="upi-id">shyamghumde12@oksbi</div>
+          <button id="confirm-payment">Confirm Payment</button>
+        </section>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="social-links">
+        <a href="https://www.facebook.com/I2ITPune/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/isquareit" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://in.linkedin.com/school/i2it-pune/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>A Project of Hope Foundation - FINOLEX Copyright © 2021 | isquareit.edu.in Powered By Onlinebusiness.org</p>
+    </footer>
+
+  </div> <!-- Flex container ends -->
+
+  <script>
+    const form = document.getElementById("donor-form");
+    const paymentBox = document.getElementById("payment-box");
+    const confirmBtn = document.getElementById("confirm-payment");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+
+      if (name && email) {
+        paymentBox.style.display = "block";
+        form.style.display = "none";
+      }
+    });
+
+    confirmBtn.addEventListener("click", function () {
+      paymentBox.style.display = "none";
+      alert("Thank you for your support!");
+    });
+  </script>
+</body>
+<script>
+  function toggleDropdown(id) {
+    document.querySelectorAll('.dropdown-content').forEach(drop => {
+      if (drop.id !== id) drop.style.display = 'none';
+    });
+    const dropdown = document.getElementById(id);
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      document.querySelectorAll('.dropdown-content').forEach(drop => {
+        drop.style.display = 'none';
+      });
+    }
+  };
+</script>
+</html>

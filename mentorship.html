@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mentorship Portal</title>
+  <link rel="stylesheet" href="mentorship.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="https://assets.collegedunia.com/public/college_data/images/logos/1631004056Logoi2it1.png" alt="I²IT Logo" />
+    </div>
+    <h1 class="header-title">International Institute of Information Technology (I²IT)</h1>
+    <div style="width:75px;"></div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown('aboutDropdown')">About Us</button>
+      <div class="dropdown-content" id="aboutDropdown">
+        <a href="about-i2it.html">About I²IT</a>
+        <a href="about-alumni.html">About Alumni Portal</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown('supportDropdown')">Support</button>
+      <div class="dropdown-content" id="supportDropdown">
+        <a href="job-portal.html">Job Portal</a>
+        <a href="mentorship.html">Mentorship</a>
+        <a href="support.html">Donation</a>
+      </div>
+    </div>
+    
+   
+    <a href="contact.html">Contact Us</a>
+    <a href="login.html">Login</a>
+  </nav>
+
+  <div class="container">
+    <h1>Alumni Mentorship Portal</h1>
+    <form id="mentorForm">
+      <label for="mentorName">Your Name</label>
+      <input type="text" id="mentorName" name="mentorName" placeholder="Full Name" required />
+
+      <label for="company">Company/Organization</label>
+      <input type="text" id="company" name="company" placeholder="Company Name" required />
+
+      <label for="position">Your Current Role</label>
+      <input type="text" id="position" name="position" placeholder="e.g., Software Engineer" required />
+
+      <label for="expertise">Areas of Expertise</label>
+      <input type="text" id="expertise" name="expertise" placeholder="e.g., Web Development, AI, Marketing" required />
+
+      <label for="mode">Preferred Mode of Mentorship</label>
+      <select id="mode" name="mode" required>
+        <option value="">Select Mode</option>
+        <option value="Online">Online</option>
+        <option value="Offline">Offline</option>
+        <option value="Hybrid">Hybrid</option>
+      </select>
+
+      <label for="availability">Availability</label>
+      <input type="text" id="availability" name="availability" placeholder="e.g., Weekends, Evenings" required />
+
+      <label for="message">Personal Message (Optional)</label>
+      <textarea id="message" name="message" placeholder="A short message to students"></textarea>
+
+      <button type="submit">Register as Mentor</button>
+    </form>
+  </div>
+  <footer>
+    <div class="social-links">
+      <a href="https://www.facebook.com/I2ITPune/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="https://twitter.com/isquareit" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://in.linkedin.com/school/i2it-pune/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+    <p>A Project of Hope Foundation - FINOLEX &copy; 2021 | isquareit.edu.in Powered By Onlinebusiness.org</p>
+  </footer>
+
+
+  <script>
+    document.getElementById('mentorForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Thank you! Your mentorship details have been submitted.');
+      this.reset();
+    });
+  </script>
+</body>
+<script>
+    function toggleDropdown(id) {
+      document.querySelectorAll('.dropdown-content').forEach(drop => {
+        if (drop.id !== id) drop.style.display = 'none';
+      });
+      const dropdown = document.getElementById(id);
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    }
+  
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        document.querySelectorAll('.dropdown-content').forEach(drop => {
+          drop.style.display = 'none';
+        });
+      }
+    };
+  </script>
+</html>

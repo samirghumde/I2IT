@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alumni Job Submission</title>
+  <link rel="stylesheet" href="job-portal.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="https://assets.collegedunia.com/public/college_data/images/logos/1631004056Logoi2it1.png" alt="I²IT Logo" />
+    </div>
+    <h1 class="header-title">International Institute of Information Technology (I²IT)</h1>
+    <div style="width:75px;"></div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown('aboutDropdown')">About Us</button>
+      <div class="dropdown-content" id="aboutDropdown">
+        <a href="about-i2it.html">About I²IT</a>
+        <a href="about-alumni.html">About Alumni Portal</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown('supportDropdown')">Support</button>
+      <div class="dropdown-content" id="supportDropdown">
+        <a href="job-portal.html">Job Portal</a>
+        <a href="mentorship.html">Mentorship</a>
+        <a href="support.html">Donation</a>
+      </div>
+    </div>
+    
+   
+    <a href="contact.html">Contact Us</a>
+    <a href="login.html">Login</a>
+  </nav>
+
+  <div class="container">
+    <h1>Alumni Job Submission</h1>
+    <form id="jobForm">
+      <label for="jobTitle">Job Title</label>
+      <input type="text" id="jobTitle" name="jobTitle" placeholder="Position title" required>
+
+      <label for="company">Company/Organization</label>
+      <input type="text" id="company" name="company" placeholder="Company name" required>
+
+      <label for="jobType">Job Type</label>
+      <select id="jobType" name="jobType" required>
+        <option value="">Select type</option>
+        <option value="Full-time">Full-time</option>
+        <option value="Part-time">Part-time</option>
+        <option value="Internship">Internship</option>
+        <option value="Contract">Contract</option>
+      </select>
+
+      <label for="location">Location</label>
+      <input type="text" id="location" name="location" placeholder="City, Remote, etc." required>
+
+      <label for="salary">Salary/Compensation</label>
+      <input type="text" id="salary" name="salary" placeholder="e.g., ₹30,000 - ₹50,000/month">
+
+      <label for="description">Job Description & Requirements</label>
+      <textarea id="description" name="description" placeholder="Brief description and requirements"></textarea>
+
+      <button type="submit">Submit Job</button>
+    </form>
+  </div>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://www.facebook.com/I2ITPune/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="https://twitter.com/isquareit" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://in.linkedin.com/school/i2it-pune/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+    <p>A Project of Hope Foundation - FINOLEX &copy; 2021 | isquareit.edu.in Powered By Onlinebusiness.org</p>
+  </footer>
+
+  <script>
+    document.getElementById('jobForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you! Your job opening has been submitted for review.');
+      this.reset();
+    });
+  </script>
+</body>
+<script>
+  function toggleDropdown(id) {
+    document.querySelectorAll('.dropdown-content').forEach(drop => {
+      if (drop.id !== id) drop.style.display = 'none';
+    });
+    const dropdown = document.getElementById(id);
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      document.querySelectorAll('.dropdown-content').forEach(drop => {
+        drop.style.display = 'none';
+      });
+    }
+  };
+</script>
+</html>
