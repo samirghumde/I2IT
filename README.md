@@ -29,4 +29,4 @@ Tech Stack
 	•	Database: MySQL
 	•	Payment Gateway: UPI 
 	•	Authentication: JWT-based login system
-	•	Frontend: (Optional placeholder if you’ve built it yet or plan to) React.js / EJS / any other
+	•	Frontend: HTML,CSS,JavaScript
